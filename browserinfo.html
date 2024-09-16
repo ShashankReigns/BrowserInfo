@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 align="center"><u>Browser Information</u></h1></u>
+</head>
+<body>
+<div id="browserInfo"></div>
+
+<script>
+window.onload = function() {
+  var browserInfoDiv = document.getElementById("browserInfo");
+  var browserInfo = "User Agent: " + navigator.userAgent + "<br>";
+  browserInfo += "Browser Language: " + navigator.language + "<br>";
+  browserInfo += "Cookies Enabled: " + navigator.cookieEnabled + "<br>";
+  browserInfo += "Screen Resolution: " + window.screen.width + "x" + window.screen.height + "<br>";
+  browserInfo += "Window Size: " + window.innerWidth + "x" + window.innerHeight + "<br>";
+  browserInfoDiv.innerHTML = browserInfo;
+};
+</script><br/>
+<a href="browserdetect.html"><button>BACK</button></a>
+</body>
+</html>
+
